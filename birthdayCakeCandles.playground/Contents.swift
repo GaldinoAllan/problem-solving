@@ -1,9 +1,22 @@
 import Foundation
 
-// Complete the birthdayCakeCandles function below.
 func birthdayCakeCandles(ar: [Int]) -> Int {
+  var count: Int = 0
+  var maxHeight: Int = 0
   
-  return 10
+  for i in ar {
+    if i >= maxHeight{
+      maxHeight = i
+    }
+  }
+  
+  for i in ar {
+    if i == maxHeight{
+      count = count + 1
+    }
+  }
+        
+  return count
 }
 
-birthdayCakeCandles(ar: [3, 2, 1, 3])
+print(birthdayCakeCandles(ar: [2, 2, 1, 3]))
