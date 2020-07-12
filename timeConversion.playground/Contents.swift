@@ -41,4 +41,4 @@ func timeConversion(s: String) -> String {
   return "\(hour):\(minutes):\(seconds)"
 }
 
-print(timeConversion(s: "13:00:00PM"))
+print(timeConversion(s: "12:00:00PM"))
